@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/victorygong.mp3-3f43db312b3060dfeac392320427bf33.mp3str"
+
+[deps]
+
+source_file="res://audio/victorygong.mp3"
+dest_files=[ "res://.import/victorygong.mp3-3f43db312b3060dfeac392320427bf33.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

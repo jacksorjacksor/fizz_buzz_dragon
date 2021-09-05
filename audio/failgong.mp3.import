@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/failgong.mp3-69b27d2b4ab119a2d725e1cebcacda58.mp3str"
+
+[deps]
+
+source_file="res://audio/failgong.mp3"
+dest_files=[ "res://.import/failgong.mp3-69b27d2b4ab119a2d725e1cebcacda58.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,502 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://button_group_fizz_buzz_body.tres" type="ButtonGroup" id=1]
+[ext_resource path="res://audio_manager.gd" type="Script" id=2]
+[ext_resource path="res://game_manager.gd" type="Script" id=3]
+[ext_resource path="res://zx-times-dynamic-font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://dragon-wings-background.png" type="Texture" id=5]
+
+[sub_resource type="InputEventAction" id=1]
+action = "1"
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
+
+[sub_resource type="InputEventAction" id=3]
+action = "2"
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 3 )
+
+[sub_resource type="InputEventAction" id=5]
+action = "3"
+
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 5 )
+
+[sub_resource type="InputEventAction" id=7]
+action = "4"
+
+[sub_resource type="ShortCut" id=8]
+shortcut = SubResource( 7 )
+
+[sub_resource type="InputEventAction" id=9]
+action = "5"
+
+[sub_resource type="ShortCut" id=10]
+shortcut = SubResource( 9 )
+
+[sub_resource type="InputEventAction" id=11]
+action = "6"
+
+[sub_resource type="ShortCut" id=12]
+shortcut = SubResource( 11 )
+
+[sub_resource type="InputEventAction" id=13]
+action = "7"
+
+[sub_resource type="ShortCut" id=14]
+shortcut = SubResource( 13 )
+
+[sub_resource type="InputEventAction" id=15]
+action = "8"
+
+[sub_resource type="ShortCut" id=16]
+shortcut = SubResource( 15 )
+
+[sub_resource type="InputEventAction" id=17]
+action = "9"
+
+[sub_resource type="ShortCut" id=18]
+shortcut = SubResource( 17 )
+
+[sub_resource type="InputEventAction" id=19]
+action = "0"
+
+[sub_resource type="ShortCut" id=20]
+shortcut = SubResource( 19 )
+
+[sub_resource type="InputEventAction" id=21]
+action = "f"
+
+[sub_resource type="ShortCut" id=22]
+shortcut = SubResource( 21 )
+
+[sub_resource type="InputEventAction" id=23]
+action = "b"
+
+[sub_resource type="ShortCut" id=24]
+shortcut = SubResource( 23 )
+
+[sub_resource type="InputEventAction" id=25]
+action = "ui_accept"
+
+[sub_resource type="ShortCut" id=26]
+shortcut = SubResource( 25 )
+
+[sub_resource type="InputEventAction" id=27]
+action = "del"
+
+[sub_resource type="ShortCut" id=28]
+shortcut = SubResource( 27 )
+
+[node name="root_node" type="Node2D"]
+script = ExtResource( 3 )
+group = ExtResource( 1 )
+
+[node name="btn_1" type="Button" parent="."]
+anchor_right = 0.308
+margin_left = 172.0
+margin_top = 225.696
+margin_right = 252.0
+margin_bottom = 285.696
+rect_scale = Vector2( 0.985277, 1 )
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 2 )
+group = ExtResource( 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_2" type="Button" parent="."]
+margin_left = 260.0
+margin_top = 225.696
+margin_right = 340.0
+margin_bottom = 285.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 4 )
+group = ExtResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_3" type="Button" parent="."]
+margin_left = 348.0
+margin_top = 225.696
+margin_right = 428.0
+margin_bottom = 285.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 6 )
+group = ExtResource( 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_4" type="Button" parent="."]
+margin_left = 172.0
+margin_top = 297.696
+margin_right = 252.0
+margin_bottom = 357.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 8 )
+group = ExtResource( 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_5" type="Button" parent="."]
+margin_left = 260.0
+margin_top = 297.696
+margin_right = 340.0
+margin_bottom = 357.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 10 )
+group = ExtResource( 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_6" type="Button" parent="."]
+margin_left = 348.0
+margin_top = 297.696
+margin_right = 428.0
+margin_bottom = 357.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 12 )
+group = ExtResource( 1 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_7" type="Button" parent="."]
+margin_left = 172.0
+margin_top = 369.696
+margin_right = 252.0
+margin_bottom = 429.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 14 )
+group = ExtResource( 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_8" type="Button" parent="."]
+margin_left = 260.0
+margin_top = 369.696
+margin_right = 340.0
+margin_bottom = 429.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 16 )
+group = ExtResource( 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_9" type="Button" parent="."]
+margin_left = 348.0
+margin_top = 369.696
+margin_right = 428.0
+margin_bottom = 429.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 18 )
+group = ExtResource( 1 )
+text = "9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_0" type="Button" parent="."]
+margin_left = 261.26
+margin_top = 441.696
+margin_right = 341.26
+margin_bottom = 501.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 20 )
+group = ExtResource( 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_fizz" type="Button" parent="."]
+margin_left = 172.0
+margin_top = 441.696
+margin_right = 252.0
+margin_bottom = 501.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 22 )
+group = ExtResource( 1 )
+text = "F"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_buzz" type="Button" parent="."]
+margin_left = 348.0
+margin_top = 441.696
+margin_right = 428.0
+margin_bottom = 501.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 24 )
+group = ExtResource( 1 )
+text = "B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_enter" type="Button" parent="."]
+margin_left = 260.0
+margin_top = 513.696
+margin_right = 428.0
+margin_bottom = 573.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 26 )
+group = ExtResource( 1 )
+text = "ENTER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_delete" type="Button" parent="."]
+margin_left = 173.0
+margin_top = 513.696
+margin_right = 253.0
+margin_bottom = 573.696
+rect_pivot_offset = Vector2( 71, 72.3182 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 28 )
+group = ExtResource( 1 )
+text = "DEL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="RichTextLabel" parent="."]
+margin_left = 177.0
+margin_top = 8.31821
+margin_right = 297.0
+margin_bottom = 64.3182
+grow_horizontal = 0
+grow_vertical = 0
+rect_pivot_offset = Vector2( 208, 32 )
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+custom_constants/line_separation = 4
+custom_constants/shadow_as_outline = 10
+text = "fizz
+buzz
+DRAGON"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="user_answer_label" type="RichTextLabel" parent="."]
+margin_left = 177.0
+margin_top = 144.318
+margin_right = 433.0
+margin_bottom = 165.318
+grow_horizontal = 0
+grow_vertical = 0
+rect_pivot_offset = Vector2( 208, 32 )
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Your answer:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="user_answer_display" type="RichTextLabel" parent="."]
+margin_left = 177.0
+margin_top = 176.0
+margin_right = 313.0
+margin_bottom = 204.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_scale = Vector2( 1.87298, 1.87298 )
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="required_answer_label" type="RichTextLabel" parent="."]
+margin_left = 177.0
+margin_top = 80.3182
+margin_right = 465.0
+margin_bottom = 116.318
+grow_horizontal = 0
+grow_vertical = 0
+rect_scale = Vector2( 0.892565, 1.09988 )
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Previous number:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="required_answer_display" type="RichTextLabel" parent="."]
+margin_left = 177.0
+margin_top = 104.0
+margin_right = 433.0
+margin_bottom = 160.0
+grow_horizontal = 0
+grow_vertical = 0
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Previous answer display"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="high_score_label" type="RichTextLabel" parent="."]
+margin_left = 305.0
+margin_top = 8.31821
+margin_right = 506.0
+margin_bottom = 45.3182
+grow_horizontal = 0
+grow_vertical = 0
+rect_scale = Vector2( 0.637604, 0.637604 )
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+text = "High score:"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="high_score_display" type="RichTextLabel" parent="."]
+margin_left = 305.0
+margin_top = 24.3182
+margin_right = 418.0
+margin_bottom = 46.3182
+grow_horizontal = 0
+grow_vertical = 0
+custom_fonts/mono_font = ExtResource( 4 )
+custom_fonts/bold_italics_font = ExtResource( 4 )
+custom_fonts/italics_font = ExtResource( 4 )
+custom_fonts/bold_font = ExtResource( 4 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[right]{text}[/right]"
+text = "{text}"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="audio_manager" type="Node2D" parent="."]
+position = Vector2( 314.256, 302.888 )
+script = ExtResource( 2 )
+
+[node name="keyclick_stream_player" type="AudioStreamPlayer2D" parent="audio_manager"]
+
+[node name="delete_stream_player" type="AudioStreamPlayer2D" parent="audio_manager"]
+
+[node name="defeat_victory_stream_player" type="AudioStreamPlayer2D" parent="audio_manager"]
+volume_db = -12.0
+
+[node name="dragon_counting_stream_player" type="AudioStreamPlayer2D" parent="audio_manager"]
+volume_db = 15.0
+
+[node name="dragon_talking_stream_player" type="AudioStreamPlayer2D" parent="audio_manager"]
+
+[node name="dragon-wings-background" type="Sprite" parent="."]
+position = Vector2( 300, 300 )
+z_index = -2
+texture = ExtResource( 5 )
