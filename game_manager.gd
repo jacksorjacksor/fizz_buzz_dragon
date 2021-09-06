@@ -10,6 +10,8 @@ var all_buttons: Array
 
 var parks_and_rec_checker: String = ""
 var parks_and_rec_required: String = "parksandrec"
+var start_the_clock: bool = false
+var time: float  = 0.00
 
 onready var user_answer_display = self.get_node("user_answer_display")
 onready var required_answer_display = self.get_node("required_answer_display")
@@ -23,7 +25,9 @@ func _ready():
 		i.connect("pressed", self, "button_pressed")
 	restart_the_game()
 	high_score_checker()
-				
+	
+	# Default - have timer hidden
+	$label_time.visible = false
 
 # mouse click version
 func button_pressed():
@@ -74,8 +78,11 @@ func result_checker(required_answer: String):
 		$audio_manager.play_sound($audio_manager.victory_sounds)
 		$audio_manager.dragon_counting_player(counter)			
 		counter += 1
+		if counter > 0:
+			start_the_clock = true
 		if counter == 30:
 			required_answer_display.text = "YOU WIN!!!"
+			start_the_clock = false
 			game_over_state()
 		else:
 			current_player_score = ""
@@ -83,6 +90,7 @@ func result_checker(required_answer: String):
 			user_answer_display.bbcode_text = ""
 	# Wrong answer
 	else:
+		start_the_clock = false
 		required_answer_display.text = "OH NO!!! Press ENTER to restart"
 		user_answer_display.bbcode_text = "[right]%s [s]%s[/s][/right]" % [fizz_buzz_checker(counter+1), current_player_score]
 		$audio_manager.play_sound($audio_manager.defeat_sounds)	
@@ -145,7 +153,12 @@ func _input(event):
 				parks_and_rec_match_checker(event, "e")
 			10: 
 				parks_and_rec_match_checker(event, "c")
-
+	if event.is_action_pressed("t"):
+		print("HELLO!")
+		if $label_time.visible == true:
+			$label_time.visible = false
+		else:
+			$label_time.visible = true
 	
 	# match event.is_action_pressed(["P","A","R","K","S","N","D","E","C"]):
 
@@ -163,3 +176,12 @@ func parks_and_rec_match_checker(event, action_name:String):
 func bobby_newport():
 	$audio_manager.dragon_bobby_newport()
 
+func _process(delta):
+	if counter == 0:
+		update_timer(0.00)
+	if start_the_clock == true:
+		time += delta
+		update_timer(time)
+
+func update_timer(time_val):
+	$label_time.bbcode_text = "[right] %0.2f [/right]" % time_val
